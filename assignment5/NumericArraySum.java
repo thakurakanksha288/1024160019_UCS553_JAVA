@@ -4,10 +4,9 @@ public class NumericArraySum {
     public static <T extends Number> double calculateSum(T[] array) {
         double sum = 0.0;
         for (T element : array) {
-            if (element != null) {
+            
                 sum += element.doubleValue();
             }
-        }
         return sum;
     }
 
